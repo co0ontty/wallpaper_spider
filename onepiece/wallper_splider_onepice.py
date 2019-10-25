@@ -32,7 +32,7 @@ def download_img(img_urls):
         try:
             img_name = re.search(r'(thumb-.*?g)',img_url).group(1)
             img = requests.get(img_url)
-            img_save = open("{}".format(img_name),'wb')
+            img_save = open("img/{}".format(img_name),'wb')
             img_save.write(img.content)
             print ('{}下载完成'.format(img_name))
             img_save.close()

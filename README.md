@@ -4,4 +4,5 @@
 |来源网站|壁纸内容|清晰度|
 |--------|--------|------|
 |https://wall.alphacoders.com|海贼王|4K|
+|http://simpledesktops.com|simpledesktops|4K|
 
