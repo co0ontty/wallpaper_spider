@@ -16,6 +16,7 @@ def get_img_url():
     img_urls = []
     for pagenum in range(1,13):
         base_url = "https://wall.alphacoders.com/by_sub_category.php?id=173190&name=%E6%B5%B7%E8%B4%BC%E7%8E%8B+%E5%A3%81%E7%BA%B8&filter=4K+Ultra+HD&lang=Chinese&page={}".format(pagenum)
+        print ("start download page: {}".format(pagenum))
         index_text = requests.get(base_url).text
         index_soup = BeautifulSoup(index_text,'html5lib')
         img_infos = index_soup.select('img')
